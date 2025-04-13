@@ -26,6 +26,7 @@
     />
     <!-- ==== css dependencies start ==== -->
     <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -625,6 +626,50 @@
       </i>
     </button>
     <!-- Header Ends -->
+
+    <!-- slider section start -->
+
+    <div
+      class="relative w-full max-w-4xl overflow-hidden rounded-xl shadow-lg"
+      style="position: relative; top: 114px; left: 300px"
+    >
+      <div
+        id="slider"
+        class="flex transition-transform duration-500 ease-in-out"
+      >
+        <img
+          src="assets/images/slider_img1.jpg"
+          class="w-full flex-shrink-0"
+          alt="Slide 1"
+        />
+        <img
+          src="assets/images/slider_img1.jpg"
+          class="w-full flex-shrink-0"
+          alt="Slide 2"
+        />
+        <img
+          src="ssets/images/slider_img1.jpg"
+          class="w-full flex-shrink-0"
+          alt="Slide 3"
+        />
+      </div>
+
+      <!-- Circular Nav Buttons with Centered Icons -->
+      <button
+        id="prev"
+        class="absolute top-1/2 left-4 -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg"
+      >
+        &#8592;
+      </button>
+      <button
+        id="next"
+        class="absolute top-1/2 right-4 -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg"
+      >
+        &#8594;
+      </button>
+    </div>
+
+    <!-- slider section end -->
     <!-- Hero Section Starts -->
     <section class="hero_area">
       <div class="container-fluid">
