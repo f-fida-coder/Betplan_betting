@@ -3347,3 +3347,27 @@ input[type="radio"] {
   -o-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 } /*# sourceMappingURL=style.min.css.map */
+
+  .slider_mobile {
+    position: relative;
+    top: 114px !important;
+    left: 300px !important;
+  }
+@media (max-width: 400px) {
+  .slider_mobile {
+    position: relative;
+    top: 114px !important;
+    left: 0px !important;
+  }
+  .middle-iconfixed {
+    top: 25% !important;
+    z-index: 5 !important;
+    background-color: rgb(var(--g1)) !important;
+    border-radius: 0 7px 7px 0;
+    left: 0% !important;
+}
+.header-section {
+  
+  background-color: #415213;
+}
+}
