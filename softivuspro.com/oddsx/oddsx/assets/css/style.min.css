@@ -3367,7 +3367,13 @@ input[type="radio"] {
     left: 0% !important;
 }
 .header-section {
-  
+
   background-color: #415213;
+}
+#prev,#next{
+    width: 22px;
+    height: 22px;
+    line-height: 1px;
+    text-align: center;
 }
 }
