@@ -3351,13 +3351,22 @@ input[type="radio"] {
   .slider_mobile {
     position: relative;
     top: 114px !important;
+    max-width:80%;
     left: 300px !important;
+  }
+  .slider_mobile img{
+    width:100%;
   }
 @media (max-width: 400px) {
   .slider_mobile {
     position: relative;
     top: 114px !important;
     left: 0px !important;
+      max-width:100%;
+  }
+  .slider_mobile img{
+    width:100%;
+
   }
   .middle-iconfixed {
     top: 25% !important;
