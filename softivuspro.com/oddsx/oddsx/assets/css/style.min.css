@@ -5,7 +5,7 @@
 @import "plugins/jquery-ui-min.css";
 @import "plugins/materialicons.css";
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap";
-@import "../../../../../cdn.jsdelivr.net/npm/%40tabler/icons-webfont%402.36.0/tabler-icons.min.css";
+/* @import "../../../../../cdn.jsdelivr.net/npm/%40tabler/icons-webfont%402.36.0/tabler-icons.min.css";
 :root {
   --body-font: "Inter", sans-serif;
   --transition: all 0.5s ease-in-out;
@@ -28,7 +28,40 @@
   --n11: 15, 27, 66;
   --g1: 53, 195, 30;
   --r1: 255, 72, 0;
+} */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.36.0/tabler-icons.min.css");
+
+:root {
+  --body-font: "Cinzel", serif;
+  --heading-font: "Cinzel", serif;
+
+  --transition: all 0.5s ease-in-out;
+  --transition2: all 0.3s ease-in-out;
+  --animate-duration: 1s;
+  --animate-delay: 0.5s;
+
+  --p1: 0, 6, 22;
+  --p2: 8, 15, 37;
+  --p3: 13, 19, 34;
+  --n1: 10, 16, 35;
+  --n2: 44, 54, 85;
+  --n3: 132, 136, 148;
+  --n4: 149, 154, 170;
+  --n5: 189, 194, 209;
+  --n6: 33, 44, 77;
+  --n7: 248, 248, 248;
+  --n8: 255, 255, 255;
+  --n9: 245, 250, 255;
+  --n10: 238, 241, 255;
+  --n11: 15, 27, 66;
+  --g1: 53, 195, 30;
+  --r1: 255, 72, 0;
 }
+
+
 .display-zero {
   font-size: 100px;
   font-weight: 120;
@@ -291,7 +324,7 @@ li {
 .logo {
   width: 103px;
   position: relative;
-  bottom: 13px;
+  bottom: 28px;
 }
 
 @media (max-width: 480px) {
@@ -310,7 +343,7 @@ html {
 body {
   font-family: var(--body-font);
   color: rgb(var(--n8));
-  background-color: rgb(var(--p1));
+  background-color: rgb(7 43 35);
   font-size: 16px;
   line-height: 130%;
   padding: 0;
@@ -590,7 +623,7 @@ select {
   background: rgba(var(--p1), 1);
 }
 .p2-bg {
-  background: rgba(var(--p2), 1);
+  background: rgba(14 22 23);
 }
 .p3-bg {
   background: rgba(var(--p3), 1);
@@ -2021,7 +2054,7 @@ input[type="radio"] {
 }
 .left-nav-area {
   position: fixed;
-  width: 284px;
+  width: 250px;
   align-items: center;
   border-right: 1px solid var(--brt1);
 }
@@ -2571,7 +2604,7 @@ input[type="radio"] {
   border-radius: 0 7px 7px 0;
 }
 .secend-actives .active {
-  background-color: rgba(var(--p2), 1) !important;
+  background-color: rgba(11 22 23) !important;
 }
 .footer_section__main {
   margin: 0 300px 0 303px;
@@ -2669,7 +2702,7 @@ input[type="radio"] {
   transition: 0.5s linear;
 }
 .fixed_footer__head {
-  background-color: rgb(var(--g1));
+  background-color: rgb(7,8,7);
   border-radius: 20px 20px 0 0;
 }
 .fixed_footer__head-n1 {
@@ -3349,13 +3382,17 @@ input[type="radio"] {
 } /*# sourceMappingURL=style.min.css.map */
 
   .slider_mobile {
+    height:300px;
     position: relative;
     top: 114px !important;
-    max-width:80%;
-    left: 300px !important;
+    max-width:75%;
+    left: 115px !important;
   }
   .slider_mobile img{
-    width:100%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
   }
 @media (max-width: 400px) {
   .slider_mobile {

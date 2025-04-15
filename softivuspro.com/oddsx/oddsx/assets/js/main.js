@@ -449,16 +449,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // slider code
 
-const slider = document.getElementById("slider");
-    const slides = slider.querySelectorAll("img");
-    let index = 0;
 
-    document.getElementById("next").addEventListener("click", () => {
-      index = (index + 1) % slides.length;
-      slider.style.transform = `translateX(-${index * 100}%)`;
-    });
+  const slider = document.getElementById("slider");
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
 
-    document.getElementById("prev").addEventListener("click", () => {
-      index = (index - 1 + slides.length) % slides.length;
-      slider.style.transform = `translateX(-${index * 100}%)`;
-    });
+  let currentIndex = 0;
+
+  const updateSlider = () => {
+    const slideWidth = slider.clientWidth;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  };
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < slider.children.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = slider.children.length - 1;
+    }
+    updateSlider();
+  });
+
+  window.addEventListener("resize", updateSlider);
+
