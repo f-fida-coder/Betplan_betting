@@ -3381,18 +3381,17 @@ input[type="radio"] {
   transition-timing-function: linear !important;
 } /*# sourceMappingURL=style.min.css.map */
 
-  .slider_mobile {
+  /* .slider_mobile {
     height:300px;
     position: relative;
     top: 114px !important;
-    max-width:85%;
+    max-width:82%;
     left: 115px !important;
   }
-  .slider_mobile img{
+  .slider_mobile img {
     object-fit: contain;
     width: 100%;
     height: 100%;
-    
   }
 @media (max-width: 400px) {
   .slider_mobile {
@@ -3422,8 +3421,65 @@ input[type="radio"] {
     line-height: 1px;
     text-align: center;
 }
+} */
+.custom-slider-container {
+  width: auto;
+  margin-left: 278px;
+  max-width: 80%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-top:108px;
 }
 
+.custom-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.custom-slider img {
+  object-fit:fill;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #333;
+}
 
 /* /////////////////////////game page css classes////////////////////// */
 .casino-games {
